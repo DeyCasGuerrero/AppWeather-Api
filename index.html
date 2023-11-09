@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Weather</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/2699365395.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Condensed:wght@100&family=Suez+One&display=swap"
+        rel="stylesheet">
+    
+</head>
+
+<body>
+    <main>
+        <div class="container-box">
+
+            <div class="search">
+                <i class="fa-solid fa-location-dot"></i>
+                <label>
+                    <input type="search" id="search" name="search" placeholder="Coloca la ubicación"/>
+                </label>
+                <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+
+            <div class="container-weather">
+                <div class="error">
+                    <img src="assets/error.png" alt="error404">
+                    <p> Lo siento, pero no se ha encontrado la ubicación</p>
+                </div>
+                <div class="weather">
+                    <div class="details">
+                        <img src="" alt="">
+                        <div class="temperature">das</div>
+                        <div class="description">dsa</div>
+                    </div>
+    
+                    <div class="weather-details">
+                        <div class="text">
+                            <i class="fa-solid fa-water"></i>
+                            <span class="huminitySpan"></span>
+                            <p>Humedad</p>
+                        </div>
+                        <div class="text">
+                            <i class="fa-solid fa-wind"></i>
+                            <span class="huminityWind"></span>
+                            <p>Viento</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script  src="index.js"></script>
+</body>
+
+</html>
