@@ -29,9 +29,9 @@ main {
     overflow: hidden;
     border-radius: 20px;
     padding: 10px;
-    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.75);
 }
 
 .search {
@@ -52,7 +52,7 @@ input {
 input:hover {
     cursor: pointer;
     border-bottom: 2px solid #000;
-    
+
 }
 
 
@@ -61,30 +61,31 @@ input:hover {
     transform: translateX(0);
 }
 
-.error{
+.error {
     font-weight: 600;
     font-size: 35px;
     text-align: center;
     color: #2d5883;
     position: absolute;
     transform: translateX(-100%);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.2s; 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.2s;
 }
 
-.error.mostrar{
+.error.mostrar {
     transform: translateX(0);
 }
 
-.details{
+.details {
     position: relative;
     top: 0;
 }
 
-.details img{
+.details img {
     width: 350px;
     height: auto;
 }
-.temperature{
+
+.temperature {
     margin-top: 20px;
     font-weight: 600;
     font-size: 60px;
@@ -92,12 +93,13 @@ input:hover {
     color: #000;
 }
 
-.description{
+.description {
     font-weight: 600;
     font-size: 20px;
     color: #000;
     text-align: center;
 }
+
 .error img {
     width: 12em;
     height: auto;
@@ -112,8 +114,8 @@ button{
     font-size: 25px;
 }
 
-.weather-details{
-    
+.weather-details {
+
     top: 100%;
     display: flex;
     justify-content: space-around;
@@ -122,23 +124,55 @@ button{
 
 }
 
-.weather{
+.weather {
     margin-top: 60px;
     padding: 1em;
     display: flex;
     transform: translateX(-100%);
     align-items: center;
     flex-direction: column;
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.2s; 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.2s;
 }
 
-.weather.mostrar{
+.weather.mostrar {
     transform: translateX(0);
 }
-.text{
+
+.text {
     padding: 30px;
     justify-content: center;
     align-items: center;
     margin-left: 2em;
     margin-right: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .weather{
+        transform: translateX(-200%);
+    }
+
+    .search {
+        font-size: 1.2em;
+        left: 20px;
+    }
+
+    input {
+        font-size: 20px;
+
+    }
+
+    .container-box {
+        background-color: #fff;
+        width: 90%;
+        max-width: 500px;
+        min-height: 650px;
+    }
+
+    .text{
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
